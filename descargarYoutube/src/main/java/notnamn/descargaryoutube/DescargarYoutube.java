@@ -30,13 +30,13 @@ public class DescargarYoutube {
         // Obtener la ruta del directorio en el escritorio
         String outputFolder = getOutputDirectory();
 
-        // Crear el directorio si no existe
+
         createOutputDirectory(outputFolder);
 
-        // Construir el comando yt-dlp
+        
         String command = buildCommand(videoUrl, format, quality, outputFolder);
 
-        // Ejecutar el comando
+
         executeCommand(command);
 
         scanner.close();
